@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
+
+:root {
+    --primary-color: #282c34;
+    --secondary-color: #61dafb;
+    --text-color: #ffffff;
+    --accent-color: wheat;
+}
+
+html {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: #282c34;
+    display: grid;
+}
+
+#heading {
+    font-size: 3em;
+    text-align: center;
+    margin: 0;
+}
+
+.headingText {
+    color: var(--accent-color);
+}
+
+#headingTextColored {
+    font-family: "Pattaya", sans-serif;
+    background-image: linear-gradient(to right, #f06, #f6f);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#btn {
+    background-color: var(--accent-color);
+    color: #282c34; /* Text color to contrast with the wheat background */
+    border: none;
+    border-radius: 50px; /* Makes the button look like a pill */
+    padding: 10px 20px; /* Adjusts the size of the button */
+    font-size: 1em; /* Adjusts the font size */
+    font-family: "Roboto", sans-serif; /* Matches the font with the rest of the page */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+#btn:hover {
+    background-color: #f5deb3; /* Slightly lighter wheat color on hover */
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
