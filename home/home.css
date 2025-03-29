@@ -14,11 +14,11 @@ html {
 }
 
 body {
-    background-color: #282c34;
+    background-color: var(--primary-color);
     display: grid;
-    place-items: start center; /* Align items to the start vertically and center horizontally */
-    min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
-    margin: 0; /* Reset default body margin */
+    place-items: start center;
+    min-height: 100vh;
+    margin: 0;
 }
 
 #heading {
@@ -40,25 +40,25 @@ body {
 
 #btn {
     background-color: var(--accent-color);
-    color: #282c34; /* Text color to contrast with the wheat background */
+    color: var(--primary-color);
     border: none;
-    border-radius: 50px; /* Makes the button look like a pill */
-    padding: 10px 20px; /* Adjusts the size of the button */
-    font-size: 1em; /* Adjusts the font size */
-    font-family: "Roboto", sans-serif; /* Matches the font with the rest of the page */
-    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 #btn:hover {
-    background-color: #f5deb3; /* Slightly lighter wheat color on hover */
-    transform: scale(1.05); /* Slightly enlarges the button on hover */
+    background-color: #f5deb3;
+    transform: scale(1.05);
 }
 
 #btn:active {
-    transform: scale(1.5); /* Slightly shrinks the button on click */
+    transform: scale(1.5);
 }
 
 svg {
