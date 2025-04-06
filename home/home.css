@@ -11,6 +11,7 @@
 html {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
+    
 }
 
 body {
@@ -19,13 +20,31 @@ body {
     place-items: start center; /* Align items at the start and center horizontally */
     min-height: 100vh;
     margin: 0;
-    grid-template-areas:
-        "header header"
-        "main image"
-        "footer footer";
     grid-template-columns: 1fr 1fr; /* Two equal columns */
     grid-template-rows: auto auto 1fr; /* Auto height for header, auto for main, 1fr for footer */
     gap: 20px; /* Add some gap between grid items */
+}
+
+#img {
+    grid-area: image;
+}
+
+@media (min-width:600px) {
+    body{
+        grid-template-areas:
+        "header header"
+        "main image"
+        "footer footer";
+    }
+}
+
+@media (max-width:600px) {
+    body{
+        grid-template-areas:
+        "header"
+        "main"
+        "image";
+    }
 }
 
 #heading {
