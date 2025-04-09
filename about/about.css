@@ -61,7 +61,7 @@ h1 {
     -webkit-text-fill-color: transparent;
 }
 
-#btn {
+button {
     background-color: var(--accent-color);
     color: var(--primary-color);
     border: none;
@@ -73,15 +73,18 @@ h1 {
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease, transform 0.2s ease;
-    grid-area: main;
 }
 
-#btn:hover {
+#btn-resume {
+  grid-area: main;
+}
+
+button:hover {
     background-color: #f5deb3;
     transform: scale(1.05);
 }
 
-#btn:active {
+button:active {
     transform: scale(1.5);
 }
 
