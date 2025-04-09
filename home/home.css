@@ -89,6 +89,7 @@ body {
 }
 
 /*DO NOT TOUCH! (Cross html content)*/
+
 #menuBar {
     position: fixed;
     bottom: 0;
@@ -106,7 +107,7 @@ body {
     flex-direction: row;
     gap: 20px;
     border-radius: 5em;
-    border: 0.2em solid red;
+    border: 0.2em solid var(--accent-color);
     padding: 10px 20px;
     width: fit-content;
     margin: 0 auto;
@@ -118,7 +119,7 @@ body {
     align-items: center;
     gap: 10px;
     text-decoration: none;
-    color: red; /* Default link color */
+    color: var(--text-color); /* Default link color */
     transition: color 0.3s ease; /* Smooth color transition */
 }
 
