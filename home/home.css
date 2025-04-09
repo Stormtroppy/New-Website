@@ -32,7 +32,7 @@ body {
 @media (min-width:600px) {
     body{
         grid-template-areas:
-        "header header"
+        "header image"
         "main image"
         "footer footer";
     }
@@ -41,8 +41,8 @@ body {
 @media (max-width:600px) {
     body{
         grid-template-areas:
-        "header"
-        "main"
+        "header image"
+        "main image"
         "image";
     }
 }
@@ -113,6 +113,9 @@ body {
 }
 
 #menuBar a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     text-decoration: none;
     color: red; /* Default link color */
     transition: color 0.3s ease; /* Smooth color transition */
