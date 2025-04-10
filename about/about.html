@@ -4,10 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stormtroppy | About Me!</title>
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="about.css"/>
+    <link rel="stylesheet" href="fadein.css"/>
 </head>
 <body>
+  <div id="fadein"></div>
   <h1>About me</h1>
+  <img src="" alt="" />
+  <button id="btn-resume">Download Resume</button>
+  <div>
+    <p>
+      I am a fullstack dev that knows mobile, web, and desktop development. I'm best at frontend web, but I'm just as good at backend desktop and mobile.
+    </p>
+  </div>
+  <button id="button-portafolio">See portafolio</button>
   <div id="menuBar">
       <nav id="menuBarContent">
           <a href="../home/home.html">
@@ -28,5 +38,12 @@
           </a>
       </nav>
   </div>
+  <script type="text/javascript">
+    window.onload = function(){
+      setTimeout(function(){
+        document.getElementById("fadein").remove();
+      },1000);
+    };
+  </script>
 </body>
 </html>

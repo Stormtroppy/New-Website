@@ -41,9 +41,10 @@ body {
 @media (max-width:600px) {
     body{
         grid-template-areas:
-        "header image"
-        "main image"
-        "image";
+        "header"
+        "main"
+        "image"
+        "footer";
     }
 }
 
