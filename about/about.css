@@ -25,27 +25,23 @@ body {
     gap: 20px; /* Add some gap between grid items */
 }
 
-#img {
+#profile-picture-img {
     grid-area: image;
+    border-radius: 50%;
+    border: 10px solid var(--accent-color);
+    width: 10em;
+    height: 10em;
 }
 
 @media (min-width:600px) {
-    body{
-        grid-template-areas:
-        "header image"
-        "main image"
-        "footer footer";
-    }
+  body {
+    grid-template-areas:
+    "";
+  }
 }
 
 @media (max-width:600px) {
-    body{
-        grid-template-areas:
-        "header"
-        "main"
-        "image"
-        "footer";
-    }
+
 }
 
 h1 {
