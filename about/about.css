@@ -36,12 +36,21 @@ body {
 @media (min-width:600px) {
   body {
     grid-template-areas:
-    "";
+    "header""table"
+    "image""table"
+    "main""table"
+    "text""table";
   }
 }
 
 @media (max-width:600px) {
-
+    body {
+        grid-template-areas:
+        "header"
+        "image"
+        "main"
+        "text";
+    }
 }
 
 h1 {
@@ -72,6 +81,10 @@ button {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+#about-me-text {
+    grid-area: text;
+}
+
 #btn-resume {
   grid-area: main;
 }
@@ -83,6 +96,27 @@ button:hover {
 
 button:active {
     transform: scale(1.5);
+}
+
+#languages-table {
+    grid-area: table;
+    display: grid;
+}
+
+#languages-table i {
+    color: var(--text-color); /* Sets the icon color to white */
+    font-size: 1.5em; /* Optional: Adjust size if needed */
+    /* Add any other styling like margins if necessary */
+}
+
+#typescript-logo {
+    width: 1.5em; /* Example size, match other logos */
+    height: auto; /* Maintain aspect ratio */
+    vertical-align: middle; /* Align better with text if needed */
+}
+
+#tailwindcss-logo {
+    filter: brightness(0) invert(1);
 }
 
 /*DO NOT TOUCH! (Cross html content)*/
