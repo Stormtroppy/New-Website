@@ -36,10 +36,10 @@ body {
 @media (min-width:600px) {
   body {
     grid-template-areas:
-    "header""table"
-    "image""table"
-    "main""table"
-    "text""table";
+    "header table"
+    "image table"
+    "main table"
+    "text table";
   }
 }
 
@@ -102,6 +102,8 @@ button:active {
     grid-area: table;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1vw 1vh;
+    place-self: center;
 }
 
 #languages-table div {
