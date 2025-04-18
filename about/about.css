@@ -101,22 +101,18 @@ button:active {
 #languages-table {
     grid-area: table;
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#languages-table div {
+    border: var(--text-color) medium solid;
+    border-radius: 1em;
 }
 
 #languages-table i {
     color: var(--text-color); /* Sets the icon color to white */
     font-size: 1.5em; /* Optional: Adjust size if needed */
     /* Add any other styling like margins if necessary */
-}
-
-#typescript-logo {
-    width: 1.5em; /* Example size, match other logos */
-    height: auto; /* Maintain aspect ratio */
-    vertical-align: middle; /* Align better with text if needed */
-}
-
-#tailwindcss-logo {
-    filter: brightness(0) invert(1);
 }
 
 /*DO NOT TOUCH! (Cross html content)*/
