@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
+
+:root {
+    --primary-color: #282c34;
+    --secondary-color: #61dafb;
+    --text-color: #ffffff;
+    --accent-color: wheat;
+}
+
+html {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+
+}
+
+body {
+    background-color: var(--primary-color);
+    display: grid;
+    place-items: start center; /* Align items at the start and center horizontally */
+    min-height: 100vh;
+    margin: 0;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto auto 1fr; /* Auto height for header, auto for main, 1fr for footer */
+    gap: 20px; /* Add some gap between grid items */
+}
+
+/*DO NOT TOUCH! (Cross html content)*/
+
+#menuBar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+
+    padding: 10px 0;
+}
+
+#menuBarContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    border-radius: 5em;
+    border: 0.2em solid var(--accent-color);
+    padding: 10px 20px;
+    width: fit-content;
+    margin: 0 auto;
+    background-color: var(--primary-color);
+}
+
+#menuBar a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--text-color); /* Default link color */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+#menuBar a:hover,
+#menuBar a:active {
+    color: cornflowerblue; /* Change color on hover/active */
+}
+
+#menuBar a:hover svg,
+#menuBar a:active svg {
+    fill: cornflowerblue;
+    transition: fill 0.3s ease;
+}
